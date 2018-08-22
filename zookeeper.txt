@@ -1,0 +1,1 @@
+docker run -d --name=zookeeper --net=host -e MYID=1 -e SERVERS=zoo1,zoo2,zoo3 --restart=always mesoscloud/zookeeper:3.4.8-centos-7
