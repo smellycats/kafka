@@ -1,0 +1,1 @@
+docker run -d -p 9000:9000  -e ZK_HOSTS="localhost:2181" hlebalbau/kafka-manager:1.3.3.18 -Dpidfile.path=/dev/null
