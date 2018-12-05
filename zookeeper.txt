@@ -1,1 +1,1 @@
-docker run -d --name=zookeeper --net=host -e MYID=1 -e SERVERS=zoo1,zoo2,zoo3 --restart=always mesoscloud/zookeeper:3.4.8-centos-7
+docker run -d --name=zookeeper --net=host --restart=always --log-opt max-size=100m --log-opt max-file=3 -e MYID=1 -e SERVERS=zoo1,zoo2,zoo3,zoo4,zoo5,zoo6,zoo7 -v /home/zookeeper/data:/tmp/zookeeper mesoscloud/zookeeper:3.4.8-centos-7
