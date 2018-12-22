@@ -1,1 +1,2 @@
 docker run -d --name=zookeeper --net=host --restart=always --log-opt max-size=100m --log-opt max-file=3 -e MYID=1 -e SERVERS=zoo1,zoo2,zoo3,zoo4,zoo5,zoo6,zoo7 -v /home/zookeeper/data:/tmp/zookeeper mesoscloud/zookeeper:3.4.8-centos-7
+docker run -d --name=zookeeper --net=host --restart=always -m 8G --cpuset-cpus="12-15" --log-opt max-size=100m --log-opt max-file=3 -e MYID=1 -e SERVERS=zoo8,zoo9,zoo10,zoo11,zoo12,zoo13,zoo14 -v /home/zookeeper/data:/tmp/zookeeper mesoscloud/zookeeper:3.4.8-centos-7
